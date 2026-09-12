@@ -19,6 +19,11 @@ The script prints the profit and Sharpe ratio for the default and optimised thre
 three-panel chart: price with buy/sell markers, the oscillator with the optimised levels, and profit
 after each trade for both variants.
 
+## Result
+
+![TSLA backtest](TSLA_stochastic_backtest.png)
+
+
 ## Running it
 
 ```
@@ -34,3 +39,6 @@ This is a learning exercise, not a trading recommendation. The thresholds are op
 data they are evaluated on, so the "optimised" result is in-sample and will overstate real
 performance. There is no walk-forward validation, no slippage and no risk-free rate in the Sharpe
 ratio.
+
+The buy-and-hold comparison above shows the main limitation of mean-reversion signals on a
+strongly trending stock.
